@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="About Me">
+    <p>Hi, I’m Siva Kumar Gannamani, a Data Analyst with over 13 years of experience in Microsoft Database and Business Intelligence solutions. I currently work at Radiance Digisoft Pvt Ltd, Bengaluru, where I leverage my expertise to transform complex data into meaningful insights that drive business decisions.</p>
+    <p>With 13 years of hands-on experience in Microsoft Business Intelligence (MSBI) tools, including SQL Server Management Studio, SSIS, SSAS, and Power BI,Azure BI services such as Azure Data Factory, Azure Databricks, Azure Data Studio, and Azure Synapse Analytics (Azure SQL Data Warehouse, Synapse SQL Server). I also have experience with ADLS Gen2, Blob Storage, and Delta Lake, along with strong skills in data refinement using PySpark and Spark SQL.
+          </p>
+      </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/ecommerce.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce Project</h5>
+            <p class="card-text">This project showcases a real-time data pipeline built for an e-commerce system using:
+Azure Data Factory (ADF) for ETL-Azure SQL Server for data transformation and storage-Power BI for insightful data visualization.
+            </p>
+            <!--a href="#" class="btn btn-primary">Blog Post</a>-->
+            <!--a href="#" class="btn btn-secondary">Source Code</a>-->
+            <a href="https://github.com/msazure1981/E-commerce-Data-Pipeline-with-Azure-Data-Factory-Azure-SQL-Server-Power-BI" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/logistics.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Logistics Project</h5>
+            <p class="card-text">This project leverages Azure Data Factory to orchestrate logistics data pipelines and Azure Databricks with PySpark for efficient ELT processing.
+              Azure Data Lake Gen2 provides scalable and secure data storage, while Power BI transforms processed data into actionable dynamic insights ,and visually engaging dashboards for decision making.</p>
+            <!--a href="#" class="btn btn-primary">Blog Post</a>-->
+            <!--a href="#" class="btn btn-secondary">Source Code</a>-->
+            <a href="https://github.com/msazure1981/Logistics-On-Premise-Data-Engineering-Project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/spokane.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title"> Spokane-Mental-Health-Project</h5>
+            <p class="card-text">This project designed to analyze mental health data for Spokane Mental Health Services. 
+              The data is sourced from CSV files and a DB2 database, processed via ETL, stored in a data warehouse, and visualized using Power BI.</p>
+            <!--a href="#" class="btn btn-primary">Blog Post</a>-->
+            <!--a href="#" class="btn btn-secondary">Source Code</a>-->
+            <a href="https://github.com/msazure1981/Spokane-Mental-Health-Services-MSBI-Project-" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/aggriculture.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Farm-Expenses-Agriculture-Project </h5>
+            <p class="card-text">This project tracks and analyzes farm-related expenses to provide insights on daily and weekly costs per field,
+              categorized by crop, work type, and worker details.example: The most productivity crop.
+            </p>
+            <!--a href="#" class="btn btn-primary">Blog Post</a>-->
+            <!--a href="#" class="btn btn-secondary">Source Code</a>-->
+            <a href="https://github.com/msazure1981/Farm-Expenses-Analytics-Agriculture-Data-Warehouse-BI-Project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/bank.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Financial-Data-Project </h5>
+            <p class="card-text">This portfolio project showcases how to extract, clean, analyze, 
+              and visualize personal banking transactions using Excel and Power BI. The dataset used is a real bank statement from HDFC spanning 10 years.</p>
+            <!--a href="#" class="btn btn-primary">Blog Post</a>-->
+            <!--a href="#" class="btn btn-secondary">Source Code</a>-->
+            <a href="https://github.com/msazure1981/Financial-Data-Analysis-Project-using-Excel-Power-BI" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/olympics.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Olympics Data Project </h5>
+            <p class="card-text">This project showcases modern data engineering and analytics on Microsoft Azure using Olympic historical datasets, including Athletes, Medals, Coaches, and more.</p>
+            <!--a href="#" class="btn btn-primary">Blog Post</a>-->
+            <!--a href="#" class="btn btn-secondary">Source Code</a>-->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+
+      
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/ssms.jpeg" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">SQL Server Management Studio</h5>
+            <p class="card-text">A powerful tool from Microsoft for managing SQL Server databases. It allows developers and analysts to create queries, manage databases, configure security, design tables, monitor performance, and execute scripts, making it essential for SQL database administration and development tasks.
+               </p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Structured Query Language (SQL) is the standard language for interacting with databases. It helps in creating, modifying, and querying data efficiently. With SQL, analysts and developers retrieve insights, perform calculations, join datasets, and manage structured data for applications and reporting.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/ssis.jpeg" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL Server Integration Services (SSIS)</h5>
+            <p class="card-text">SSIS is Microsoft’s ETL tool for data integration and workflow automation. It extracts data from multiple sources, transforms it for consistency, and loads it into databases or warehouses. Widely used in enterprise ETL pipelines, it simplifies large-scale data migration and automation.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+       <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/ssas.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL Server Analysis Services (SSAS)</h5>
+            <p class="card-text">SSAS is Microsoft’s business intelligence tool used to create OLAP cubes and tabular models. It enables fast data analysis, trend identification, and predictive insights. With SSAS, enterprises turn raw data into multidimensional models that power reports, dashboards, and analytics.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+       <!-- Skill 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/adf.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Azure Data Factory</h5>
+            <p class="card-text">ADF is a cloud-based ETL and data integration service. It allows building, scheduling, and orchestrating data pipelines across cloud and on-premise systems. Businesses use ADF to automate workflows, move large-scale data, and prepare clean datasets for analytics and reporting.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 6 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/adb.jpg" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Azure Databricks</h5>
+            <p class="card-text">Azure Databricks is a collaborative data engineering and machine learning platform built on Apache Spark. It supports big data processing, AI model training, and advanced analytics. With seamless Azure integration, Databricks empowers teams to ingest, transform, and analyze large datasets.</p>
+            <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 7 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/ads.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Azure Data Studio</h5>
+            <p class="card-text">Azure Data Studio is a cross-platform database management tool. It provides a modern editor experience with IntelliSense, dashboards, and notebooks. Developers and analysts use it for writing queries, exploring data, and managing SQL Server and Azure SQL databases effectively.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 8 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/asa.jpg" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Azure Synapse Analytics </h5>
+            <p class="card-text">Azure Synapse is a powerful cloud data warehouse solution for analytics. It integrates big data and enterprise data warehousing, enabling queries across structured and unstructured data. With built-in connectors, it delivers real-time insights, predictive analytics, and business intelligence at scale.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 9 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/adls-gen2.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">Azure Data Lake Store Gen2</h5>
+            <p class="card-text">ADLS Gen2 is a scalable cloud storage solution for big data analytics. It combines hierarchical file systems with low-cost blob storage. Businesses use it to securely store, manage, and analyze structured and unstructured data for machine learning and reporting.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 10 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/pyspark.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">PySpark</h5>
+            <p class="card-text">PySpark is the Python API for Apache Spark. It enables scalable data analysis, distributed computing, and machine
+               learning on large datasets. Data engineers and scientists use PySpark to process massive amounts of structured and unstructured data in real-time.
+               it empowers data to analyze big data</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 11 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/ssrs.jpeg" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL Server Reporting Services</h5>
+            <p class="card-text">SSRS is a reporting tool from Microsoft that creates, manages, and delivers interactive and paginated reports.
+              It connects to multiple data sources, enabling organizations to generate insights, dashboards, and visualizations for business decision-making.</p>
+             <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+       <!-- Skill 12 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/powerbi.jpeg" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">Power BI</h5>
+            <p class="card-text">Power BI is Microsoft’s data visualization and business intelligence tool. It transforms raw data into interactive dashboards and reports. With features like AI insights, real-time analytics, cloud sharing, and seamless integrations, Power BI empowers businesses to make data-driven decisions effectively and confidently.</p>
+            <!--a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> ms.azure.1981@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> +91-9742792889</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.linkedin.com/in/siva-kumar-gannamani-91a556294/" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+          Twitter
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/msazure1981" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
