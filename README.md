@@ -1,8 +1,13 @@
 # website
 Header: “Hi—I'm Siva Kumar Gannamani 👋”
 
-Short Bio: One sentence about your role and experience.
+Short Bio: I’m a Data Analyst with 13+ years in Microsoft BI and Azure data engineering. I specialize in building scalable data pipelines and dashboards that drive decisions.
+.
 
 Portfolio Link: My portfolio website → https://msazure1981.github.io/website/
 
-Project Highlights: List 3–5 standout projects with short descriptions and links to repos.
+Project Highlights: 
+Project-1
+🛒 E-commerce Data Pipeline with Azure Data Factory, SQL Server & Power BI
+https://github.com/msazure1981/E-commerce-Data-Pipeline-with-Azure-Data-Factory-Azure-SQL-Server-Power-BI
+
